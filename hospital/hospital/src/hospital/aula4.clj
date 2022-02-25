@@ -33,5 +33,8 @@
   ;(pprint (s/validate Pacientes {-15 guilherme}))
   ;(pprint (s/validate Pacientes {15 15}))
   ;(pprint (s/validate Pacientes {15 {:id 15, :nome "Guilherme"}}))
-
   )
+
+(def Visitas
+  {PosInt [s/Str]})
+
