@@ -62,6 +62,7 @@
 (pprint (s/validate Paciente {:id 15, :nome "Guilherme", :plano [:raio-x, :ultrasom]}))
 (pprint (s/validate Paciente {:id 15, :nome "Guilherme", :plano [:raio-x]}))
 (pprint (s/validate Paciente {:id 15, :nome "Guilherme", :plano []}))
+(pprint (s/validate Paciente {:id 15, :nome "Guilherme", :plano nil}))
 ; plano é uma kewyord obrigatoria no mapa, mas ela pode ter um valor vazil (nil, [])
 ;(pprint (s/validate Paciente {:id 15, :nome "Guilherme"}))
 
